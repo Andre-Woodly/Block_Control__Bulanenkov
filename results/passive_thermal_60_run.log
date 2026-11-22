@@ -1,0 +1,43 @@
+TRAIN LOSSES [0.0002226066280854866, 0.00022556977637577802, 0.00021342809486668557, 0.00022512688883580267, 0.00022704125149175525]
+CALIBRATION
+                method                                             calibration_groups  conformal_factor  n_calibration
+        fixed_nominal                                                   matched only            0.7589            400
+   fixed_pooled_known                         matched,in_support,higher_noise pooled            1.5635           1200
+    fixed_worst_known            max groupwise among matched,in_support,higher_noise            2.1195            400
+adaptive_pooled_known              normalized pooled matched,in_support,higher_noise            1.6268           1200
+ adaptive_worst_known max normalized groupwise among matched,in_support,higher_noise            2.0963            400
+SUMMARY
+        scenario                method    n  coverage  coverage_wilson_lo  coverage_wilson_hi  mean_full_width  median_full_width  p95_full_width  forecast_rmse  failures
+        matched         fixed_nominal 1200    0.9167              0.8997              0.9310           1.5178             1.5178          1.5178         0.3515       100
+        matched    fixed_pooled_known 1200    1.0000              0.9968              1.0000           3.1271             3.1271          3.1271         0.3515         0
+        matched     fixed_worst_known 1200    1.0000              0.9968              1.0000           4.2390             4.2390          4.2390         0.3515         0
+        matched adaptive_pooled_known 1200    0.9825              0.9734              0.9885           1.9070             1.8702          2.4373         0.3515        21
+        matched  adaptive_worst_known 1200    0.9967              0.9915              0.9987           2.4575             2.4100          3.1409         0.3515         4
+     in_support         fixed_nominal 1200    0.8483              0.8269              0.8675           1.5178             1.5178          1.5178         0.3822       182
+     in_support    fixed_pooled_known 1200    0.9975              0.9927              0.9991           3.1271             3.1271          3.1271         0.3822         3
+     in_support     fixed_worst_known 1200    1.0000              0.9968              1.0000           4.2390             4.2390          4.2390         0.3822         0
+     in_support adaptive_pooled_known 1200    0.9300              0.9141              0.9431           1.9876             1.9378          2.6171         0.3822        84
+     in_support  adaptive_worst_known 1200    0.9808              0.9714              0.9872           2.5614             2.4972          3.3726         0.3822        23
+  heldout_combo         fixed_nominal 1200    0.9583              0.9455              0.9683           1.5178             1.5178          1.5178         0.3107        50
+  heldout_combo    fixed_pooled_known 1200    1.0000              0.9968              1.0000           3.1271             3.1271          3.1271         0.3107         0
+  heldout_combo     fixed_worst_known 1200    1.0000              0.9968              1.0000           4.2390             4.2390          4.2390         0.3107         0
+  heldout_combo adaptive_pooled_known 1200    0.9933              0.9869              0.9966           2.0532             1.9960          2.7917         0.3107         8
+  heldout_combo  adaptive_worst_known 1200    1.0000              0.9968              1.0000           2.6459             2.5722          3.5975         0.3107         0
+outside_support         fixed_nominal 1200    0.3825              0.3554              0.4103           1.5178             1.5178          1.5178         0.8831       741
+outside_support    fixed_pooled_known 1200    0.6783              0.6514              0.7042           3.1271             3.1271          3.1271         0.8831       386
+outside_support     fixed_worst_known 1200    0.8558              0.8348              0.8746           4.2390             4.2390          4.2390         0.8831       173
+outside_support adaptive_pooled_known 1200    0.6700              0.6429              0.6960           3.2893             2.9175          6.0068         0.8831       396
+outside_support  adaptive_worst_known 1200    0.8083              0.7851              0.8296           4.2388             3.7597          7.7408         0.8831       230
+   higher_noise         fixed_nominal 1200    0.1450              0.1262              0.1661           1.5178             1.5178          1.5178         0.9649      1026
+   higher_noise    fixed_pooled_known 1200    0.7158              0.6897              0.7406           3.1271             3.1271          3.1271         0.9649       341
+   higher_noise     fixed_worst_known 1200    0.9183              0.9015              0.9325           4.2390             4.2390          4.2390         0.9649        98
+   higher_noise adaptive_pooled_known 1200    0.7842              0.7600              0.8065           3.6238             3.4321          5.9346         0.9649       259
+   higher_noise  adaptive_worst_known 1200    0.9175              0.9006              0.9318           4.6699             4.4229          7.6477         0.9649        99
+SCALE DIAGNOSTICS
+        scenario  mean_observable_scale  p95_observable_scale  mean_maxabs_future_error  corr_scale_future_err
+        matched                 0.5861                0.7491                    0.4761                 0.2261
+     in_support                 0.6109                0.8044                    0.5185                 0.0697
+  heldout_combo                 0.6311                0.8581                    0.4248                 0.1233
+outside_support                 1.0110                1.8463                    1.2110                 0.2281
+   higher_noise                 1.1138                1.8241                    1.3094                 0.3598
+ELAPSED 4.8466081619262695
