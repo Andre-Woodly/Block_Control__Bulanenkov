@@ -1,0 +1,53 @@
+{
+  "date_utc": "2026-11-22T13:32:06.847185+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0+cpu",
+  "pandas": "2.2.3",
+  "experiment": 69,
+  "model": "Synthetic discrete Euler two-temperature state with arbitrary clamped feedback",
+  "source_67_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898",
+  "study_script_sha256": "1bfcfe41ad08dba8bcb5a3e5a03dc0e8756f91ae5e48f2c203c8c42f5833f572",
+  "sample_dt": 0.2,
+  "box_radius": 3.0,
+  "P_diagonal": [
+    1,
+    2
+  ],
+  "noise_disturbance_bound": 0.06,
+  "scenarios": [
+    "nominal",
+    "a_g_shift",
+    "nonlinear_shift",
+    "compound_shift",
+    "higher_noise"
+  ],
+  "methods": [
+    "M0_fixed",
+    "M0_reconfigured",
+    "M0_reconfigured_plus_NN",
+    "M0_reconfigured_plus_poly"
+  ],
+  "stress_cases": [
+    "quiet",
+    "bounded_noise_disturbance"
+  ],
+  "training_groups": [
+    0,
+    1
+  ],
+  "net_init_indices": [
+    0,
+    1
+  ],
+  "initial_test_state_seed_pattern": "23451+i*100+j*23",
+  "training_trajectories_per_group": 180,
+  "test_trajectories_per_group_method_scenario": 120,
+  "evaluation_steps": 160,
+  "warmup_steps": 30,
+  "no_training_data_from_eval": true,
+  "scope": "BENIGN abstract thermal system; region invariance for physical state under bounded input, NOT full NN-controller asymptotic stability.",
+  "certificate_min_box_margin": 0.2030000000000003,
+  "certificate_worst_rho": 0.99492837448006
+}
