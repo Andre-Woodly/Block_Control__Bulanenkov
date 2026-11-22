@@ -1,0 +1,21 @@
+OBSERVABILITY
+       scenario    A  h_times_c  det_observability  rank  condition2      F11
+       nominal 0.00      0.018              0.018     2  106.338374 0.956000
+       nominal 0.45      0.018              0.018     2  105.630962 0.949318
+       nominal 0.62      0.018              0.018     2  104.999743 0.943315
+compound_shift 0.00      0.029              0.029     2   64.384537 0.931000
+compound_shift 0.45      0.029              0.029     2   62.616765 0.903055
+compound_shift 0.62      0.029              0.029     2   61.074734 0.877953
+NOISE
+       scenario  sensor_sigma      n  rmse_W_reconstruction  median_absolute_error_W  p95_abs_error_W  naive_W_zero_rmse  noise_amplification_sqrt2_over_hc                                                note
+       nominal         0.000 160000           8.021858e-16             4.440892e-16     1.665335e-15           0.259189                          78.567420 True p and applied u known; no process disturbance.
+       nominal         0.018 160000           1.379989e+00             9.300648e-01     2.706711e+00           0.259189                          78.567420 True p and applied u known; no process disturbance.
+       nominal         0.085 160000           6.525790e+00             4.402083e+00     1.276365e+01           0.259189                          78.567420 True p and applied u known; no process disturbance.
+compound_shift         0.000 160000           4.395062e-16             2.498002e-16     9.159340e-16           0.259189                          48.765985 True p and applied u known; no process disturbance.
+compound_shift         0.018 160000           8.436664e-01             5.686156e-01     1.655679e+00           0.259189                          48.765985 True p and applied u known; no process disturbance.
+compound_shift         0.085 160000           3.972988e+00             2.689112e+00     7.766549e+00           0.259189                          48.765985 True p and applied u known; no process disturbance.
+IDENTIFIABILITY
+  sigma      n               u               A               W  mean_estimated_slope  std_estimated_slope  p05_estimated_slope  p95_estimated_slope  fraction_clipped_upper  ratio_of_expected_numerator_denominator  data_identifies_a_or_g                                                                                                    note
+ 0.000 160000 0 for all steps 0 for all steps 0 for all steps              0.220000             0.000000             0.220000              0.22000                0.000000                                 0.220000                   False No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise.
+ 0.018 160000 0 for all steps 0 for all steps 0 for all steps              0.238516             0.007659             0.228104              0.25265                0.000000                                 0.238513                   False No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise.
+ 0.085 160000 0 for all steps 0 for all steps 0 for all steps              0.541038             0.073512             0.391715              0.60000                0.444594                                 0.601362                   False No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise.
