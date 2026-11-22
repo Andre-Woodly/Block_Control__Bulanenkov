@@ -1,0 +1,99 @@
+{
+  "date_utc": "2026-11-22T11:25:16.703015+00:00",
+  "reproduction": [
+    "python experiment.py --family linear_two_state --out linear",
+    "python experiment.py --family nonlinear_two_state --out nonlinear",
+    "python merge_and_check.py"
+  ],
+  "notes": "2 synthetic thermal families; 3 independent training sets each; 4 neural initializations per set; 120 held-out trajectories per scenario; 100 feedback steps; all models use the same fixed regulator, differing in one-step predictor. No EGSP/aviation model or safety certification.",
+  "training_files": {
+    "linear": {
+      "date_utc": "2026-11-22T11:23:36.876827+00:00",
+      "models": {
+        "linear_two_state": {
+          "a": 0.16,
+          "c": 0.24,
+          "w": 0.055,
+          "q": 0.0,
+          "g": 0.85
+        },
+        "nonlinear_two_state": {
+          "a": 0.22,
+          "c": 0.28,
+          "w": 0.05,
+          "q": 0.12,
+          "g": 0.75
+        }
+      },
+      "training_groups": [
+        111,
+        222,
+        333
+      ],
+      "initializations": [
+        7,
+        19,
+        31,
+        43
+      ],
+      "n_training_trajectories_per_group": 180,
+      "n_test_trajectories": 120,
+      "train_steps": 55,
+      "closed_loop_steps": 100,
+      "training_iters_per_NN": 230,
+      "noise_nominal": 0.045,
+      "dt": 0.2,
+      "method": "offline learning of one-step residual, fixed model-predictive academic thermostat with bounded actuator; no online training",
+      "python": "3.13.5",
+      "numpy": "2.3.5",
+      "torch": "2.10.0+cpu",
+      "pandas": "2.2.3",
+      "scope": "Synthetic heating/cooling only, not hydraulic actuation or vehicle control",
+      "elapsed_seconds": 20.075
+    },
+    "nonlinear": {
+      "date_utc": "2026-11-22T11:24:06.815975+00:00",
+      "models": {
+        "linear_two_state": {
+          "a": 0.16,
+          "c": 0.24,
+          "w": 0.055,
+          "q": 0.0,
+          "g": 0.85
+        },
+        "nonlinear_two_state": {
+          "a": 0.22,
+          "c": 0.28,
+          "w": 0.05,
+          "q": 0.12,
+          "g": 0.75
+        }
+      },
+      "training_groups": [
+        111,
+        222,
+        333
+      ],
+      "initializations": [
+        7,
+        19,
+        31,
+        43
+      ],
+      "n_training_trajectories_per_group": 180,
+      "n_test_trajectories": 120,
+      "train_steps": 55,
+      "closed_loop_steps": 100,
+      "training_iters_per_NN": 230,
+      "noise_nominal": 0.045,
+      "dt": 0.2,
+      "method": "offline learning of one-step residual, fixed model-predictive academic thermostat with bounded actuator; no online training",
+      "python": "3.13.5",
+      "numpy": "2.3.5",
+      "torch": "2.10.0+cpu",
+      "pandas": "2.2.3",
+      "scope": "Synthetic heating/cooling only, not hydraulic actuation or vehicle control",
+      "elapsed_seconds": 20.25
+    }
+  }
+}
