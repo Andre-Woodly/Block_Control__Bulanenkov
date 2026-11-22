@@ -1,0 +1,6 @@
+method,calibration_groups,conformal_factor,n_calibration
+fixed_nominal,matched only,0.7589016898552767,400
+fixed_pooled_known,"matched,in_support,higher_noise pooled",1.5635417149514002,1200
+fixed_worst_known,"max groupwise among matched,in_support,higher_noise",2.1194991572575943,400
+adaptive_pooled_known,"normalized pooled matched,in_support,higher_noise",1.6267522519170767,1200
+adaptive_worst_known,"max normalized groupwise among matched,in_support,higher_noise",2.096337088192898,400
