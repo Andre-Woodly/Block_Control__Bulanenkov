@@ -1,0 +1,64 @@
+trained Full_NN_nominal losses [0.00014971080236136913, 9.967782534658909e-05, 0.00010511365690035746, 0.00011407810234231874, 0.00012135496945120394]
+trained Hybrid_M0_plus_NN_nominal losses [0.00012452212104108185, 0.00013074908929411322, 0.00012032503582304344, 0.0001265704195247963, 0.0001304397010244429]
+trained Full_NN_broad losses [0.00028527979156933725, 0.00022417321451939642, 0.0002487397287040949, 0.00023165886523202062, 0.0002632643445394933]
+trained Hybrid_M0_plus_NN_broad losses [0.0002226066280854866, 0.00022556977637577802, 0.00021342809486668557, 0.00022512688883580267, 0.00022704125149175525]
+SUMMARY
+        scenario                    method  rmse_obs  rmse_true  coverage       q  n_seeds
+  heldout_combo             Full_NN_broad   0.30853    0.23329   0.96317 0.78850        5
+  heldout_combo           Full_NN_nominal   0.42927    0.37748   0.56467 0.60566        5
+  heldout_combo   Hybrid_M0_plus_NN_broad   0.31205    0.23319   0.95767 0.76401        5
+  heldout_combo Hybrid_M0_plus_NN_nominal   0.39233    0.33145   0.66567 0.60466        5
+  heldout_combo           Physics_current   0.42161    0.36849   0.83833 0.82832        1
+  heldout_combo           Physics_history   0.43798    0.38640   0.49083 0.51941        1
+  heldout_combo               Ridge_broad   0.26580    0.17324   0.99167 0.80140        1
+  heldout_combo             Ridge_nominal   0.39999    0.34314   0.55250 0.53039        1
+   higher_noise             Full_NN_broad   0.83123    0.52007   0.19917 0.78850        5
+   higher_noise           Full_NN_nominal   0.79513    0.45855   0.09717 0.60566        5
+   higher_noise   Hybrid_M0_plus_NN_broad   0.96627    0.69774   0.14750 0.76401        5
+   higher_noise Hybrid_M0_plus_NN_nominal   0.92954    0.64444   0.07083 0.60466        5
+   higher_noise           Physics_current   0.98357    0.72364   0.18583 0.82832        1
+   higher_noise           Physics_history   0.77450    0.42204   0.05833 0.51941        1
+   higher_noise               Ridge_broad   0.81031    0.48913   0.22750 0.80140        1
+   higher_noise             Ridge_nominal   0.77373    0.42164   0.06500 0.53039        1
+     in_support             Full_NN_broad   0.40935    0.35636   0.83067 0.78850        5
+     in_support           Full_NN_nominal   0.47650    0.43455   0.59017 0.60566        5
+     in_support   Hybrid_M0_plus_NN_broad   0.38317    0.32531   0.84783 0.76401        5
+     in_support Hybrid_M0_plus_NN_nominal   0.42167    0.37189   0.66450 0.60466        5
+     in_support           Physics_current   0.48385    0.44170   0.76750 0.82832        1
+     in_support           Physics_history   0.45058    0.40605   0.53250 0.51941        1
+     in_support               Ridge_broad   0.39641    0.34153   0.84833 0.80140        1
+     in_support             Ridge_nominal   0.44237    0.39682   0.55250 0.53039        1
+        matched             Full_NN_broad   0.35243    0.29324   0.90550 0.78850        5
+        matched           Full_NN_nominal   0.27527    0.19018   0.90217 0.60566        5
+        matched   Hybrid_M0_plus_NN_broad   0.35260    0.28876   0.91700 0.76401        5
+        matched Hybrid_M0_plus_NN_nominal   0.29093    0.20677   0.88450 0.60466        5
+        matched           Physics_current   0.38971    0.33470   0.91833 0.82832        1
+        matched           Physics_history   0.23834    0.12995   0.90750 0.51941        1
+        matched               Ridge_broad   0.35530    0.29653   0.91083 0.80140        1
+        matched             Ridge_nominal   0.24411    0.14112   0.90333 0.53039        1
+outside_support             Full_NN_broad   1.09834    1.08377   0.29833 0.78850        5
+outside_support           Full_NN_nominal   1.39977    1.38919   0.11583 0.60566        5
+outside_support   Hybrid_M0_plus_NN_broad   0.88367    0.86491   0.38217 0.76401        5
+outside_support Hybrid_M0_plus_NN_nominal   1.09264    1.07817   0.21267 0.60466        5
+outside_support           Physics_current   1.06140    1.04675   0.33833 0.82832        1
+outside_support           Physics_history   1.41892    1.40846   0.08417 0.51941        1
+outside_support               Ridge_broad   1.13825    1.12413   0.29667 0.80140        1
+outside_support             Ridge_nominal   1.38710    1.37642   0.09667 0.53039        1
+BOOTSTRAP
+        scenario                                          comparison  delta_rmse  ci95_lo  ci95_hi
+        matched Hybrid_M0_plus_NN_nominal - Hybrid_M0_plus_NN_broad    -0.06167 -0.06837 -0.05385
+        matched                     Full_NN_nominal - Full_NN_broad    -0.07716 -0.08516 -0.06870
+        matched             Full_NN_broad - Hybrid_M0_plus_NN_broad    -0.00017 -0.00816  0.00745
+     in_support Hybrid_M0_plus_NN_nominal - Hybrid_M0_plus_NN_broad     0.03850  0.02857  0.04754
+     in_support                     Full_NN_nominal - Full_NN_broad     0.06715  0.05504  0.07832
+     in_support             Full_NN_broad - Hybrid_M0_plus_NN_broad     0.02618  0.01752  0.03489
+  heldout_combo Hybrid_M0_plus_NN_nominal - Hybrid_M0_plus_NN_broad     0.08028  0.07235  0.08856
+  heldout_combo                     Full_NN_nominal - Full_NN_broad     0.12074  0.11332  0.12791
+  heldout_combo             Full_NN_broad - Hybrid_M0_plus_NN_broad    -0.00352 -0.01083  0.00311
+outside_support Hybrid_M0_plus_NN_nominal - Hybrid_M0_plus_NN_broad     0.20896  0.20201  0.21587
+outside_support                     Full_NN_nominal - Full_NN_broad     0.30143  0.29232  0.31066
+outside_support             Full_NN_broad - Hybrid_M0_plus_NN_broad     0.21467  0.20359  0.22676
+   higher_noise Hybrid_M0_plus_NN_nominal - Hybrid_M0_plus_NN_broad    -0.03673 -0.04432 -0.02804
+   higher_noise                     Full_NN_nominal - Full_NN_broad    -0.03610 -0.04484 -0.02724
+   higher_noise             Full_NN_broad - Hybrid_M0_plus_NN_broad    -0.13504 -0.15361 -0.11861
+METADATA 18.231508493423462
