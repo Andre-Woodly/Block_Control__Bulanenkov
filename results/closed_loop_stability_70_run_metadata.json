@@ -1,0 +1,30 @@
+{
+  "date_utc": "2026-11-22T14:35:42.661612+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "torch": "2.10.0+cpu",
+  "pandas": "2.2.3",
+  "source67_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898",
+  "code70_sha256": "be171a929eea5ceef707d3e5a3104eeeb61af5992eac6688ac35aced451cc860",
+  "seeds": {
+    "training_groups": [
+      0,
+      1
+    ],
+    "NN_init_index": [
+      0,
+      1
+    ]
+  },
+  "selected_five_scenarios": [
+    "nominal",
+    "a_g_shift",
+    "nonlinear_shift",
+    "compound_shift",
+    "higher_noise"
+  ],
+  "scan": "A from -0.4 to 0.4 with history A_i=A and old controls=0 (off-trajectory diagnostic)",
+  "elapsed_seconds": 9.03453815100005,
+  "limitations": "calculation of conditional small-gain threshold; no certification that actual NN controller satisfies it"
+}
