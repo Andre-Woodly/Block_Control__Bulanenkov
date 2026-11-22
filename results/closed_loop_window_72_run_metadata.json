@@ -1,0 +1,38 @@
+{
+  "date_utc": "2026-11-22T16:27:17.180957+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "torch": "2.10.0+cpu",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "NTRAIN_trajectories_per_group": 150,
+  "NTEST_per_evaluation": 100,
+  "training_data_seeds": [
+    101,
+    303,
+    509
+  ],
+  "network_initialization_seeds": [
+    7,
+    19
+  ],
+  "WINDOWS": [
+    1,
+    2,
+    5,
+    10,
+    18
+  ],
+  "M0_parameter_estimation_window": 18,
+  "nn_architecture": "39-24-24-1 tanh; identical architecture for all windows with unused older history entries set to 0",
+  "nn_train_iterations": 270,
+  "features": "newest-first last L y measurements, last L past actions, prospective candidate u, ahat and ghat; zero padding to 18",
+  "notes": [
+    "M0 regression always uses last 18 past transitions; independent of NN input history",
+    "NN weights fixed after training; coefficients ahat,ghat recalculated each simulated step",
+    "Model is a synthetic two-temperature thermostat, not an electrohydraulic actuator",
+    "All methods use same 9-action discrete educational policy and same disturbance/noise realizations per scenario",
+    "Reported bootstrap intervals use only three independent training groups; inferential scope is limited",
+    "Closed-loop results do not establish Lyapunov stability or physical safety"
+  ]
+}
