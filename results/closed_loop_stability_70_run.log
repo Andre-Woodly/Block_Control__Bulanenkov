@@ -1,0 +1,22 @@
+trained 0 0 elapsed 2.8
+trained 0 1 elapsed 4.9
+trained 1 0 elapsed 7.1
+trained 1 1 elapsed 9.0
+RESULT theorem {'P_diag': [1.0, 2.0], 'R': 3.0, 'h': 0.2, 'dmax': 0.06, 'u_max': 1, 'rho': 0.9949283744800601, 'sqrt_rho': np.float64(0.9974609638878407), 'g_max': 0.8, 'min_relative_decay': np.float64(0.002539036112159332), 'u_gain_in_weighted_norm': 0.16000000000000003, 'disturbance_gain_in_weighted_norm': 0.2, 'ISS_ultimate_bound_with_u1_d006': np.float64(67.742242489699), 'max_weighted_norm_in_invariant_box': np.float64(5.196152422706632), 'small_gain_threshold_L0_plus_Lhistory': np.float64(0.01586897570099582), 'small_gain_form': 'sqrt(rho)+h*gmax*(L0+Lh)<1', 'proved_for': 'physical state in K, arbitrary saturated controller, time-varying parameters in convex hull; conditional full-loop zero-origin only if origin-compatible Lipschitz controller and small-gain inequality', 'does_not_prove': 'closed-loop NN stability, parameter estimator convergence, tracking with nonzero reference, monotonic Lyapunov decline under noise'}
+ group  init                    method  control_at_zero  switches_over_A_-0p4_to_0p4  max_action_jump
+     0     0                  M0_fixed              0.0                            8             0.25
+     0     0           M0_reconfigured              0.0                            8             0.25
+     0     0   M0_reconfigured_plus_NN              0.0                            8             0.25
+     0     0 M0_reconfigured_plus_poly              0.0                            8             0.25
+     0     1                  M0_fixed              0.0                            8             0.25
+     0     1           M0_reconfigured              0.0                            8             0.25
+     0     1   M0_reconfigured_plus_NN              0.0                            8             0.25
+     0     1 M0_reconfigured_plus_poly              0.0                            8             0.25
+     1     0                  M0_fixed              0.0                            8             0.25
+     1     0           M0_reconfigured              0.0                            8             0.25
+     1     0   M0_reconfigured_plus_NN              0.0                            8             0.25
+     1     0 M0_reconfigured_plus_poly              0.0                            8             0.25
+     1     1                  M0_fixed              0.0                            8             0.25
+     1     1           M0_reconfigured              0.0                            8             0.25
+     1     1   M0_reconfigured_plus_NN              0.0                            8             0.25
+     1     1 M0_reconfigured_plus_poly              0.0                            8             0.25
