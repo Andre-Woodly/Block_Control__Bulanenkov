@@ -1,0 +1,54 @@
+{
+  "utc_date": "2026-11-22T10:42:54.091693+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "torch": "2.10.0+cpu",
+  "scipy": "1.17.0",
+  "experiment_58_source_sha256": "f2dc856f8120067734e8165f67875ccf343096786d94b82eb6e77a229c40b959",
+  "experiment_59_source_sha256": "e8bb9834d3ba6589772b95598fbcf1e963afde4e549ca8784977ca6cb31d4fe5",
+  "training_seed": 1101,
+  "interval_calibration_seed": 2202,
+  "alarm_calibration_seed": 2203,
+  "test_seed": 3303,
+  "network_initializations": [
+    4,
+    17,
+    29,
+    41,
+    53
+  ],
+  "training_losses": [
+    0.0002226066280854866,
+    0.00022556977637577802,
+    0.00021342809486668557,
+    0.00022512688883580267,
+    0.00022704125149175525
+  ],
+  "n_train_broad": 1200,
+  "n_train_nominal_for_detector": 1200,
+  "n_calibrate_interval": 400,
+  "n_calibrate_alarm": 400,
+  "n_test_per_scenario": 1200,
+  "warning_nominal_threshold_quantile": 0.9,
+  "forecast_nominal_simultaneous_interval_coverage_target": 0.9,
+  "forecast_interval_halfwidth": 0.7589016898552767,
+  "indicator_thresholds": {
+    "history_fit": 0.22583704273067373,
+    "last_innovation": 0.4174698354466635,
+    "mahalanobis": 2.780475515519864,
+    "correction_size": 0.4973685761900473,
+    "nn_disagreement": 0.041195524692947266,
+    "combined": 1.1027099669297806
+  },
+  "indicator_normalizers": {
+    "history_fit": 0.2508959101740334,
+    "last_innovation": 0.4961655666044742,
+    "mahalanobis": 2.9847308290445036,
+    "correction_size": 0.543705755222029,
+    "nn_disagreement": 0.050345977051216975
+  },
+  "forecast_method": "ensemble mean of five broad-parameter trained hybrid NN correctors",
+  "elapsed_seconds": 5.130100965499878,
+  "scope": "Synthetic passive thermal forecast with pre-forecast observed-history alarms. No physical actuator or closed-loop control."
+}
