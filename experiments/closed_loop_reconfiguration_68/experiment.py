@@ -6,8 +6,8 @@ neural-network, quantized, noise-affected or time-varying reference loop.
 """
 import importlib.util, pathlib, datetime, json, platform, hashlib, time
 import numpy as np, pandas as pd, torch
-ROOT=pathlib.Path('/mnt/data/closed_loop_reconfiguration_68'); ROOT.mkdir(exist_ok=True)
-SRC=pathlib.Path('/mnt/data/closed_loop_reconfiguration_67/experiment.py')
+ROOT=pathlib.Path(__file__).resolve().parent; ROOT.mkdir(exist_ok=True)
+SRC=ROOT.parent/'closed_loop_reconfiguration_67'/'experiment.py'
 spec=importlib.util.spec_from_file_location('thermostat67',SRC)
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 TRAIN_GROUPS=[0,1]; INIT_IDS=[0,1]
