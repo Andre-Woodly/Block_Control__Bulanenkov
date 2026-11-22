@@ -1,0 +1,41 @@
+{
+  "date_utc": "2026-11-22T17:35:09.961984+00:00",
+  "scope": "Synthetic passive two-state heat-exchange equations; no physical drive or industrial control.",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "seed": 7319,
+  "n_mc": 160000,
+  "h": 0.2,
+  "parameter_sets": {
+    "nominal": {
+      "a": 0.13,
+      "c": 0.09,
+      "w": 0.045,
+      "b": 0.055,
+      "g": 0.8
+    },
+    "compound_shift": {
+      "a": 0.2,
+      "c": 0.145,
+      "w": 0.028,
+      "b": 0.23,
+      "g": 0.61
+    }
+  },
+  "legacy_estimator": {
+    "window": 18,
+    "lambda_a": 1.5,
+    "prior_a": 0.22,
+    "clip_a": [
+      0.05,
+      0.6
+    ]
+  },
+  "inference_limits": [
+    "Known-parameter rank 2 does not prove unknown-parameter identifiability.",
+    "One-step reconstruction is not statistically optimal with noise.",
+    "A zero-input zero-state experiment cannot identify physical parameters, regardless of sample size.",
+    "Monte Carlo standard errors and interval estimates are not surrogate guarantees about broader scenarios."
+  ]
+}
