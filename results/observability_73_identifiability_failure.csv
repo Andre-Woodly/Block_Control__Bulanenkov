@@ -1,0 +1,4 @@
+sigma,n,u,A,W,mean_estimated_slope,std_estimated_slope,p05_estimated_slope,p95_estimated_slope,fraction_clipped_upper,ratio_of_expected_numerator_denominator,data_identifies_a_or_g,note
+0.0,160000,0 for all steps,0 for all steps,0 for all steps,0.22,0.0,0.22,0.22,0.0,0.22,False,"No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise."
+0.018,160000,0 for all steps,0 for all steps,0 for all steps,0.2385163344414371,0.0076585762057221,0.2281037852596558,0.2526496457559473,0.0,0.2385126627671613,False,"No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise."
+0.085,160000,0 for all steps,0 for all steps,0 for all steps,0.5410384967361568,0.0735120843184026,0.391714665521467,0.6,0.44459375,0.6013619214134536,False,"No excitation: any physical parameter set produces A=W=0, u=0; fitted slope comes from prior and noise."
