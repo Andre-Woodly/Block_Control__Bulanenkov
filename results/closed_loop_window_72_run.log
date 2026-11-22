@@ -1,0 +1,20 @@
+trained group 0 seconds 11.9
+trained group 1 seconds 24.3
+trained group 2 seconds 36.0
+evaluated nominal constant seconds 37.4
+evaluated compound_shift constant seconds 38.5
+evaluated higher_noise constant seconds 39.7
+evaluated nonlinear_shift constant seconds 40.8
+evaluated nominal piecewise seconds 41.9
+evaluated compound_shift piecewise seconds 42.9
+CONSTANT STEADY RMSE method           M0_plus_NN_L1  M0_plus_NN_L10  M0_plus_NN_L18  M0_plus_NN_L2  M0_plus_NN_L5  M0_plus_Ridge18  M0_reconfigured
+scenario                                                                                                                      
+compound_shift         0.02476         0.02685         0.02142        0.02940        0.03381          0.02357          0.02560
+higher_noise           0.05484         0.04797         0.04827        0.04879        0.04595          0.04484          0.05487
+nominal                0.02022         0.02062         0.02073        0.01888        0.01901          0.01974          0.02028
+nonlinear_shift        0.01983         0.02056         0.02018        0.01872        0.01937          0.01908          0.01980
+PIECEWISE ALL RMSE method          M0_plus_NN_L1  M0_plus_NN_L10  M0_plus_NN_L18  M0_plus_NN_L2  M0_plus_NN_L5  M0_plus_Ridge18  M0_reconfigured
+scenario                                                                                                                     
+compound_shift        0.18203         0.18117         0.18319        0.18119        0.18063          0.18358          0.18203
+nominal               0.15885         0.15761         0.15775        0.15865        0.15821          0.15754          0.15870
+finished 44.2 seconds
