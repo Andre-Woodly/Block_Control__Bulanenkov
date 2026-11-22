@@ -1,0 +1,43 @@
+{
+  "date_utc": "2026-11-22T15:10:15.315400+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "torch": "2.10.0+cpu",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "source67_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898",
+  "code71_sha256": "0ca6b3dd9c5fac3a967113736c8f07a5036f828c041bffd6b1b3de882278bd95",
+  "training_group_seeds": [
+    101,
+    303
+  ],
+  "nn_weight_seeds": [
+    7,
+    19
+  ],
+  "n_test_per_configuration": 120,
+  "steps_after_warmup": 165,
+  "warmup": 30,
+  "scenarios": [
+    "nominal",
+    "compound_shift",
+    "higher_noise"
+  ],
+  "targets": [
+    0.0,
+    0.45,
+    0.62,
+    -0.35
+  ],
+  "methods": [
+    "M0_fixed",
+    "M0_reconfigured",
+    "M0_true_coeff_oracle",
+    "M0_fixed_plus_NN",
+    "M0_reconfigured_plus_NN",
+    "M0_reconfigured_plus_poly"
+  ],
+  "reference_piecewise": "(0,.45,-.35,.62,-.2) each 33 steps",
+  "disturbance_clipping": 0.06,
+  "limitations": "fixed offline NN; 2 train groups x 2 initializations; synthetic thermal system; no physical drive; grid controller never guarantees exact nonzero tracking; no formal stability proof for complete NN controller"
+}
