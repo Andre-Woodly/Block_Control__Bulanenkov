@@ -1,0 +1,11 @@
+{
+  "certificate.csv": "a15fe31a415503597532a82af1c5e4fbec7a392712620d96ea79ebdc498afd92",
+  "runs.csv": "a6537d9ce98c763f26dfb94e8e8c009866abe7c34cf385a82c338abdfa8986e9",
+  "summary.csv": "580762ea7199211ea6ffbd20111ec5f2c8abd1078abc496ab8050a0a2426969a",
+  "training.csv": "2546e01fc6e42ce0643410ffc9d9678677c35c80414f5fde66a268631757cace",
+  "run_metadata.json": "396cb512c755da4f4ee5b0a90e62a5b6f84fd69d0bcad82883ac1c6a2a317a14",
+  "REPORT.md": "43de770c37aac833737bb713f137e072e693b2d5d63661fa0437bd6a32c0fd95",
+  "lyapunov_full_loop.png": "8dd8f823eac81915e4ca85be70e85c77994d72dd8f5c52d7954b263223cbd49a",
+  "closed_loop_error.png": "aef929bd6ad25142f4881976602d1a068d60f61831ed50df8fa16de2bd0e5d39",
+  "experiment69.py": "1bfcfe41ad08dba8bcb5a3e5a03dc0e8756f91ae5e48f2c203c8c42f5833f572"
+}
