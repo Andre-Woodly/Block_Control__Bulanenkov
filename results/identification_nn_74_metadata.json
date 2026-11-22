@@ -1,0 +1,37 @@
+{
+  "scope": "Synthetic benign two-temperature model; not a real physical actuator",
+  "training_dataset_seeds": [
+    101,
+    303,
+    509
+  ],
+  "weight_seeds": [
+    7,
+    19
+  ],
+  "scenarios": [
+    "nominal",
+    "compound_shift",
+    "higher_noise"
+  ],
+  "estimators": [
+    "raw",
+    "filtered3",
+    "moment_adjusted"
+  ],
+  "NN_windows": [
+    2,
+    18
+  ],
+  "history_estimator": 18,
+  "num_training_trajectories_each": 120,
+  "test_trajectories_per_config": 70,
+  "eval_steps": 68,
+  "stationary_noise_windows_per_setting": 40000,
+  "caution": "Moment correction assumes known sigma and corrects only two moments; due to feedback noise correlations and omitted dynamics it is not a statistically consistent parameter estimator. Filtered3 is not an optimal observer. Oracle has privileged true coefficients for diagnostic comparison.",
+  "date_utc": "2026-11-22T20:01:10.789921+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "torch": "2.10.0+cpu",
+  "source72_sha256": "89f7e2a5fc20672ed38f31b01f31ccfa7668de6c4aa833ba0ad0199fda046f09"
+}
