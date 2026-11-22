@@ -13,7 +13,12 @@ from pathlib import Path
 import numpy as np, pandas as pd, torch, scipy
 
 HERE=Path(__file__).resolve().parent
-sys.path.insert(0,str(HERE/'closed_loop_reconfiguration_67'))
+SOURCE67=HERE/'closed_loop_reconfiguration_67'/'experiment.py'
+if not SOURCE67.exists():
+    SOURCE67=HERE.parent/'closed_loop_reconfiguration_67'/'experiment.py'
+if not SOURCE67.exists():
+    raise FileNotFoundError('Source 67 experiment.py not found next to, or one directory above, experiment69.py')
+sys.path.insert(0,str(SOURCE67.parent))
 import experiment as m
 
 P=np.diag([1.,2.]); rootP=np.diag([1.,np.sqrt(2.)]); rootP_inv=np.diag([1.,1/np.sqrt(2.)]);
@@ -171,7 +176,7 @@ def main(out:Path):
         'python':platform.python_version(),'numpy':np.__version__,'scipy':scipy.__version__,
         'torch':torch.__version__,'pandas':pd.__version__,
         'experiment':69,'model':'Synthetic discrete Euler two-temperature state with arbitrary clamped feedback',
-        'source_67_sha256':hashlib.sha256((HERE/'closed_loop_reconfiguration_67'/'experiment.py').read_bytes()).hexdigest(),
+        'source_67_sha256':hashlib.sha256(SOURCE67.read_bytes()).hexdigest(),
         'study_script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'sample_dt':m.DT,'box_radius':R,'P_diagonal':[1,2],
         'noise_disturbance_bound':D_BOUND,
