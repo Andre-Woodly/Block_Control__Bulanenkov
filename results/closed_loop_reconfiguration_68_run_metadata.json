@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-22T12:25:06.609289+00:00",
+  "origin_script": "/mnt/data/closed_loop_reconfiguration_67/experiment.py",
+  "script_source_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "torch": "2.10.0+cpu",
+  "pandas": "2.2.3",
+  "train_groups": [
+    0,
+    1
+  ],
+  "init_ids": [
+    0,
+    1
+  ],
+  "step_n": 140,
+  "step_steps": 220,
+  "step_amplitude": 0.35,
+  "dt": 0.2,
+  "lyap_n": 120,
+  "lyap_steps": 140,
+  "seed_step_base": 78000,
+  "seed_lyapunov_base": 10000,
+  "note": "Toy thermostat only. Ideal-law Lyapunov proof not applicable to actual NN-based quantized controller. No control hardware/aviation."
+}
