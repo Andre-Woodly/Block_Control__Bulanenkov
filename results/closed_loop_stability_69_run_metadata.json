@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-11-22T13:32:06.847185+00:00",
+  "date_utc": "2026-11-22T13:37:03.152192+00:00",
   "python": "3.13.5",
   "numpy": "2.3.5",
   "scipy": "1.17.0",
@@ -8,7 +8,7 @@
   "experiment": 69,
   "model": "Synthetic discrete Euler two-temperature state with arbitrary clamped feedback",
   "source_67_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898",
-  "study_script_sha256": "1bfcfe41ad08dba8bcb5a3e5a03dc0e8756f91ae5e48f2c203c8c42f5833f572",
+  "study_script_sha256": "ab61fb12cfc309ad18faf367317fc5da1fe06cffffc9e6b4fb84320a977eaab2",
   "sample_dt": 0.2,
   "box_radius": 3.0,
   "P_diagonal": [
