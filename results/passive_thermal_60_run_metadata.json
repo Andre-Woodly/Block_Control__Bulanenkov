@@ -1,0 +1,86 @@
+{
+  "date_utc": "2026-11-22T10:53:01.342297+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "torch": "2.10.0+cpu",
+  "scipy": "1.17.0",
+  "pandas": "2.2.3",
+  "dependency_sha256": "f2dc856f8120067734e8165f67875ccf343096786d94b82eb6e77a229c40b959",
+  "experiment_source_sha256": "ccae0816a625d999430af4387746881b9b252d50f47cfbc779765050afc8ed1d",
+  "train_n": 1200,
+  "network_seed_values": [
+    4,
+    17,
+    29,
+    41,
+    53
+  ],
+  "optimization_steps_each": 500,
+  "train_seed": 1101,
+  "cal_nom_seed": 2202,
+  "cal_known_seeds": {
+    "matched": 2203,
+    "in_support": 2303,
+    "higher_noise": 2403
+  },
+  "scale_fit_seeds": {
+    "matched": 2204,
+    "in_support": 2304,
+    "higher_noise": 2404
+  },
+  "test_seed": 3303,
+  "n_cal_nom": 400,
+  "n_cal_per_known_group": 400,
+  "n_scale_fit_per_known_group": 400,
+  "n_test_each_scenario": 1200,
+  "network_losses": [
+    0.0002226066280854866,
+    0.00022556977637577802,
+    0.00021342809486668557,
+    0.00022512688883580267,
+    0.00022704125149175525
+  ],
+  "scale_coef": [
+    -0.3398632763595653,
+    0.17468258569137926,
+    0.0724520944713944,
+    0.13555784508010502,
+    0.011971480477287633,
+    -0.01155652139392966
+  ],
+  "scale_mu": [
+    0.2177609606314458,
+    0.2862899219138217,
+    1.2660716587060596,
+    0.2305973067342547,
+    0.03458297303446891
+  ],
+  "scale_sd": [
+    0.14199131821969793,
+    0.24246745720109447,
+    0.37110452317841225,
+    0.10880632409206506,
+    0.04
+  ],
+  "method": "five broad-trained M0+NN forecasts; mean prediction; simultaneous four-future-observation intervals",
+  "coverage_target": 0.9,
+  "calibration_factors": {
+    "fixed_nominal": 0.7589016898552767,
+    "fixed_pooled_known": 1.5635417149514002,
+    "fixed_worst_known": 2.1194991572575943,
+    "adaptive_pooled_known": 1.6267522519170767,
+    "adaptive_worst_known": 2.096337088192898
+  },
+  "known_calibration_scenarios": [
+    "matched",
+    "in_support",
+    "higher_noise"
+  ],
+  "unseen_scenarios": [
+    "heldout_combo",
+    "outside_support"
+  ],
+  "critical_limit": "Nothing is calibrated on heldout_combo or outside_support; no guaranteed conditional/groupwise coverage there.",
+  "elapsed_seconds": 4.8466081619262695,
+  "scope": "Only synthetic passive heating/cooling signal forecasting; no actuators, control or feedback."
+}
