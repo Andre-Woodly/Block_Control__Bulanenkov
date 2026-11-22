@@ -1,0 +1,99 @@
+{
+  "date_utc": "2026-11-22T12:10:12.955569+00:00",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "torch": "2.10.0+cpu",
+  "train_dataset_seeds": [
+    101,
+    303
+  ],
+  "nn_weight_seeds": [
+    7,
+    19,
+    31
+  ],
+  "evaluation_seed_base": 9000,
+  "nominal": {
+    "a": 0.13,
+    "c": 0.09,
+    "w": 0.045,
+    "b": 0.055,
+    "g": 0.8
+  },
+  "scenarios": {
+    "nominal": [
+      {
+        "a": 0.13,
+        "c": 0.09,
+        "w": 0.045,
+        "b": 0.055,
+        "g": 0.8
+      },
+      0.018
+    ],
+    "a_g_shift": [
+      {
+        "a": 0.19,
+        "c": 0.09,
+        "w": 0.045,
+        "b": 0.055,
+        "g": 0.65
+      },
+      0.018
+    ],
+    "nonlinear_shift": [
+      {
+        "a": 0.13,
+        "c": 0.09,
+        "w": 0.045,
+        "b": 0.25,
+        "g": 0.8
+      },
+      0.018
+    ],
+    "compound_shift": [
+      {
+        "a": 0.2,
+        "c": 0.145,
+        "w": 0.028,
+        "b": 0.23,
+        "g": 0.61
+      },
+      0.018
+    ],
+    "higher_noise": [
+      {
+        "a": 0.13,
+        "c": 0.09,
+        "w": 0.045,
+        "b": 0.055,
+        "g": 0.8
+      },
+      0.085
+    ]
+  },
+  "training_trajectories_each": 180,
+  "test_trajectories_each_scenario": 180,
+  "evaluation_time_steps": 75,
+  "warmup_time_steps": 30,
+  "all_methods": [
+    "M0_fixed",
+    "M0_reconfigured",
+    "M0_true_coeff_oracle",
+    "M0_fixed_plus_NN",
+    "M0_reconfigured_plus_NN",
+    "M0_reconfigured_plus_poly"
+  ],
+  "nn_train_steps": 245,
+  "physical_scope": "Benign synthetic two-temperature thermostat, no physical drive or aviation system",
+  "notes": [
+    "Same plant and disturbances across methods; reconfiguration uses causal regularized regressions on observed history",
+    "M0_reconfigured is a reduced-order estimated model, not ground-truth parameter oracle",
+    "M0_true_coeff_oracle is a diagnostic reference with access to hidden true effective coefficients a+c and g, not a deployable method",
+    "Corrector NN weights are fixed after offline training, respond to online parameter estimates as inputs",
+    "Small training-group count limits inferential strength; no formal stability theorem",
+    "The one-step grid search is a toy feedback mechanism; results should not be transferred to physical actuation"
+  ],
+  "script_sha256": "2c212bdd59a8ba8ab64a76b60d9a2579144d78513edf8309957c97c877edb898"
+}
