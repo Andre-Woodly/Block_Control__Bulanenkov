@@ -1,0 +1,22 @@
+{
+  "P_diag": [
+    1.0,
+    2.0
+  ],
+  "R": 3.0,
+  "h": 0.2,
+  "dmax": 0.06,
+  "u_max": 1,
+  "rho": 0.9949283744800601,
+  "sqrt_rho": 0.9974609638878407,
+  "g_max": 0.8,
+  "min_relative_decay": 0.002539036112159332,
+  "u_gain_in_weighted_norm": 0.16000000000000003,
+  "disturbance_gain_in_weighted_norm": 0.2,
+  "ISS_ultimate_bound_with_u1_d006": 67.742242489699,
+  "max_weighted_norm_in_invariant_box": 5.196152422706632,
+  "small_gain_threshold_L0_plus_Lhistory": 0.01586897570099582,
+  "small_gain_form": "sqrt(rho)+h*gmax*(L0+Lh)<1",
+  "proved_for": "physical state in K, arbitrary saturated controller, time-varying parameters in convex hull; conditional full-loop zero-origin only if origin-compatible Lipschitz controller and small-gain inequality",
+  "does_not_prove": "closed-loop NN stability, parameter estimator convergence, tracking with nonzero reference, monotonic Lyapunov decline under noise"
+}
