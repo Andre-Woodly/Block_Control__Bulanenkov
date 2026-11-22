@@ -1,0 +1,37 @@
+
+SUMMARY
+        scene          method  rmse_obs  rmse_true  coverage  halfwidth  seeds
+higher_noise  Hybrid_history   0.79733    0.46029   0.07780    0.55487      5
+higher_noise      NN_current   0.95027    0.68970   0.18040    0.80828      5
+higher_noise      NN_history   0.77538    0.42217   0.07260    0.53715      5
+higher_noise Physics_current   0.95644    0.69808   0.19500    0.82813      1
+higher_noise Physics_history   0.77085    0.41545   0.06800    0.52904      1
+     matched  Hybrid_history   0.24919    0.14767   0.90560    0.55487      5
+     matched      NN_current   0.38635    0.32940   0.91100    0.80828      5
+     matched      NN_history   0.24751    0.14471   0.89000    0.53715      5
+     matched Physics_current   0.38692    0.33007   0.92200    0.82813      1
+     matched Physics_history   0.23715    0.12775   0.90600    0.52904      1
+ rates_shift  Hybrid_history   0.79771    0.77113   0.25440    0.55487      5
+ rates_shift      NN_current   0.71332    0.68298   0.44880    0.80828      5
+ rates_shift      NN_history   0.85595    0.83133   0.21860    0.53715      5
+ rates_shift Physics_current   0.71700    0.68678   0.45600    0.82813      1
+ rates_shift Physics_history   0.85880    0.83448   0.21300    0.52904      1
+  warm_walls  Hybrid_history   0.24986    0.14913   0.90460    0.55487      5
+  warm_walls      NN_current   0.38354    0.32586   0.91340    0.80828      5
+  warm_walls      NN_history   0.24858    0.14585   0.89700    0.53715      5
+  warm_walls Physics_current   0.38798    0.33149   0.91800    0.82813      1
+  warm_walls Physics_history   0.23721    0.12788   0.90600    0.52904      1
+
+BOOTSTRAP
+        scene                        contrast  mean_delta  ci95_low  ci95_high
+     matched     NN_current_minus_NN_history     0.13885   0.12830    0.14951
+     matched NN_history_minus_Hybrid_history    -0.00168  -0.00444    0.00086
+higher_noise     NN_current_minus_NN_history     0.17489   0.15378    0.19625
+higher_noise NN_history_minus_Hybrid_history    -0.02195  -0.02846   -0.01586
+  warm_walls     NN_current_minus_NN_history     0.13496   0.12523    0.14541
+  warm_walls NN_history_minus_Hybrid_history    -0.00128  -0.00405    0.00179
+ rates_shift     NN_current_minus_NN_history    -0.14263  -0.16329   -0.12186
+ rates_shift NN_history_minus_Hybrid_history     0.05824   0.05461    0.06196
+
+LOSSES
+ {'NN_current': [0.0002220985625172034, 0.00022216977959033102, 0.0002234016137663275, 0.00022451742552220821, 0.00022345432080328465], 'NN_history': [9.419997513759881e-05, 9.14764532353729e-05, 9.524945926386863e-05, 9.618884359952062e-05, 9.742572001414374e-05], 'Hybrid_history': [9.872995724435896e-05, 9.740118548506871e-05, 9.312959446106106e-05, 9.281621169066057e-05, 0.000100294804724399]}
