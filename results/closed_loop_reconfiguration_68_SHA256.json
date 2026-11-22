@@ -1,0 +1,19 @@
+{
+  "step_runs.csv": "ba0b368a46c2c9e85ee383d1296e4e24cf0c340c6d0028fe76fd3b250e569656",
+  "theory_checks.csv": "ea1f70fc5e40f90bd9a22959108166f7e5171ecc49613cdbfccebaba60204011",
+  "training.csv": "5dd0de3401ca0da1298771ea260641e5f948bdae9b64d2bdf38ddf9c93dde8c9",
+  "step_comparison.png": "efd564dcaadf12baa630480eb273093fa7bc22943557e83b9074998bf419c953",
+  "experiment.py": "37ccfc49cf6c6d88a9ce3201e5d70e5da7676c79a0d5da8a5a6c1e3bcacc1fb6",
+  "step_trajectories.csv": "5f809a220ee1085fc68c30b3fb189f1f72815f43156292b670906f5b8fa34952",
+  "common_lyapunov.csv": "74aeb754aa6b71434510fa161122dcfa92b1d411ecc2f00be4cea46bceeb5b9d",
+  "REPORT.md": "7f345047a77bc2118b92137ea70faf637ff794125a636e83b976b0e1f087483a",
+  "lyapunov_diagnostic.png": "450315a1582402786baff333d498f0122a2a2386f7a175e1c7b7536623573866",
+  "paired_bootstrap.csv": "0c26190bbafb0ca0abe6a848f557c3252ad06a0aefc6b5d2eb0a095546071bbe",
+  "make_report.py": "5b98d757c6ce471550ef2da611a7b18fd2f6dba0ca87ae1ad722402a18de52dd",
+  "step_summary.csv": "5ced90007b45a21c88ca4dcd4c3ba9b125e044ce96bc7c73ea536b8dc4e75db6",
+  "run.log": "804cd0ae9617b6a4a56c2859e6e0b71a4ff5e5fa518a33a0e6de99ca1923a754",
+  "create_docx.py": "4fb0e7d4c98d2f0986cb7aedc6706dfba305808430be4f51fd67b39391e809e7",
+  "run_metadata.json": "965eb8b7cebe4052a7e0b0a246ea8d7f0ecbaae13ef5b02fc02a5eba17e892ac",
+  "lyapunov_numeric.csv": "80cf7a56b0dbb8827dd5b3b7e5263856721ef610b013615381bc89f20f791d8b",
+  "render.log": "129b1f718567e8247ba9475656cfeb39025eba8035e8cb34078664089e4a7de9"
+}
