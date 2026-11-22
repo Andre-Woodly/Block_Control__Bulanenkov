@@ -1,0 +1,22 @@
+step done nominal
+step done a_g_shift
+step done nonlinear_shift
+step done compound_shift
+step done higher_noise
+lyapunov numeric nominal
+lyapunov numeric a_g_shift
+lyapunov numeric nonlinear_shift
+lyapunov numeric compound_shift
+lyapunov numeric higher_noise
+SUMMARY RMSE:
+method           M0_fixed  ...  M0_true_coeff_oracle
+scenario                   ...                      
+a_g_shift         0.02480  ...               0.02335
+compound_shift    0.02920  ...               0.02467
+higher_noise      0.06351  ...               0.06351
+nominal           0.02269  ...               0.02269
+nonlinear_shift   0.02287  ...               0.02287
+
+[5 rows x 6 columns]
+THEORY CHECKS: 0 max 8.881784197001252e-16
+elapsed 17.73564648628235
